@@ -8,10 +8,6 @@ import { faBell , faUser } from "@fortawesome/free-solid-svg-icons";
 function Homepage() {
 
   const navigate = useNavigate();
-  const handleNavigate = () => navigate("/Supplierpage");
-  const goToAbout = () => {
-    navigate('/SupplierInfo');
-  };
 
   return (
    <div style={{  }} >
@@ -22,10 +18,10 @@ function Homepage() {
         <div style={{ fontFamily: "poppins", display: "flex", justifyContent: "space-evenly", alignItems: "center", height: "90px" }} >
             <img style={{ marginLeft: "-5%" }} src={Logo} alt="logo" width={"8%"} />
            <div style={{ width: "40%", display: "flex", justifyContent: "space-evenly" }} >
-              <h3 style={{ color: "red"}} >Home</h3>
-              <h3 onClick={handleNavigate} >Supplier</h3>
-              <h3 onClick={goToAbout} >Info</h3>
-              <h3>Support</h3>
+              <h3 onClick={() => navigate("/Homepage")} style={{ color: "red", cursor: "pointer"}} >Home</h3>
+              <h3 onClick={() => navigate("/Supplierpage")} style={{ cursor: "pointer" }} >Supplier</h3>
+              <h3 onClick={() => navigate("/SupplierInfo")} style={{ cursor: "pointer" }} >Info</h3>
+              <h3 onClick={() => navigate("/Supportpage")} style={{ cursor: "pointer" }} >Support</h3>
             </div>
             <div style={{ width: "13%", display: "flex", justifyContent: "space-between", marginRight: "-10%" }} >
             <FontAwesomeIcon icon={faBell} size="3x" />  {/* Notification Bell icon */}

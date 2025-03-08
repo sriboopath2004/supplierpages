@@ -22,7 +22,7 @@ function Supplierpage() {
            <h2 style={{ marginTop: "-5%" }} >03</h2> 
         </div> 
        </div>
-       <div style={{ marginTop: "4%" ,display: 'flex', justifyContent: 'center', alignItems: 'center', width: '70%', margin: 'auto', gap: '20px' }}>
+       <div style={{ marginLeft: "15%",marginTop: "3.8%" ,display: 'flex', justifyContent: 'center', alignItems: 'center', width: '70%' }}>
       
       {/* Left Side Content */}
       <div style={{ width: '50%', textAlign: 'center' }}>
